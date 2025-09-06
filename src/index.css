@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SynergySphere Design System - Modern Project Management Theme */
+
+@layer base {
+  :root {
+    /* Color Palette from User Image - Light Mode */
+    --background: 0 0% 100%; /* Pure white background */
+    --foreground: 0 0% 0%; /* Pure black text */
+    
+    /* Card & Surface Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --surface: 48 28% 95%; /* Cream from palette */
+    
+    /* Interactive Elements */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    
+    /* Brand Primary - Teal from palette */
+    --primary: 180 25% 60%; /* Teal from palette */
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 180 25% 45%;
+    
+    /* Secondary - Sage from palette */
+    --secondary: 120 15% 75%; /* Sage from palette */
+    --secondary-foreground: 0 0% 0%;
+    
+    /* Muted Elements */
+    --muted: 48 28% 95%;
+    --muted-foreground: 0 0% 40%;
+    
+    /* Accent - Dusty Rose from palette */
+    --accent: 15 30% 75%; /* Dusty rose from palette */
+    --accent-foreground: 0 0% 0%;
+    
+    /* Status Colors - Using palette colors */
+    --success: 120 15% 75%; /* Sage from palette */
+    --success-foreground: 0 0% 0%;
+    --warning: 48 28% 80%; /* Cream variation */
+    --warning-foreground: 0 0% 0%;
+    --destructive: 15 30% 75%; /* Dusty rose from palette */
+    --destructive-foreground: 0 0% 0%;
+    
+    /* Priority Colors */
+    --priority-low: 120 15% 75%;
+    --priority-medium: 48 28% 80%;
+    --priority-high: 15 30% 75%;
+    
+    /* Interactive States */
+    --border: 0 0% 80%;
+    --input: 48 28% 95%;
+    --ring: 180 25% 60%;
+    
+    /* No Gradients - Solid colors only */
+    --gradient-primary: hsl(180 25% 60%);
+    --gradient-secondary: hsl(48 28% 95%);
+    --gradient-hero: hsl(15 30% 75%);
+    
+    /* Minimal Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.1);
+    --shadow-md: 0 2px 4px 0 hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 4px 8px 0 hsl(0 0% 0% / 0.1);
+    --shadow-glow: none;
+    
+    /* Border Radius */
+    --radius: 0.5rem;
+
+    /* Sidebar Light Mode */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 0%;
+    --sidebar-primary: 180 25% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 48 28% 95%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 0 0% 80%;
+    --sidebar-ring: 180 25% 60%;
+  }
+
+  .dark {
+    /* Dark Mode using Palette Colors */
+    --background: 0 0% 10%; /* Very dark background */
+    --foreground: 0 0% 100%; /* Pure white text */
+    
+    /* Card & Surface Colors */
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 100%;
+    --surface: 48 28% 20%; /* Dark cream from palette */
+    
+    /* Interactive Elements */
+    --popover: 0 0% 15%;
+    --popover-foreground: 0 0% 100%;
+    
+    /* Brand Primary - Teal from palette (brighter for dark mode) */
+    --primary: 180 25% 70%;
+    --primary-foreground: 0 0% 10%;
+    --primary-dark: 180 25% 60%;
+    
+    /* Secondary - Dark sage from palette */
+    --secondary: 120 15% 30%;
+    --secondary-foreground: 0 0% 100%;
+    
+    /* Muted Elements */
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+    
+    /* Accent - Dusty rose from palette (brighter for dark mode) */
+    --accent: 15 30% 60%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Status Colors - Using palette colors */
+    --success: 120 15% 60%; /* Sage from palette */
+    --success-foreground: 0 0% 10%;
+    --warning: 48 28% 60%; /* Cream variation */
+    --warning-foreground: 0 0% 10%;
+    --destructive: 15 30% 60%; /* Dusty rose from palette */
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Priority Colors */
+    --priority-low: 120 15% 60%;
+    --priority-medium: 48 28% 60%;
+    --priority-high: 15 30% 60%;
+    
+    /* Interactive States */
+    --border: 0 0% 30%;
+    --input: 0 0% 20%;
+    --ring: 180 25% 70%;
+    
+    /* No Gradients - Solid colors only */
+    --gradient-primary: hsl(180 25% 70%);
+    --gradient-secondary: hsl(48 28% 20%);
+    --gradient-hero: hsl(15 30% 60%);
+    
+    /* Minimal Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 2px 4px 0 hsl(0 0% 0% / 0.3);
+    --shadow-lg: 0 4px 8px 0 hsl(0 0% 0% / 0.3);
+    --shadow-glow: none;
+
+    /* Sidebar Dark Mode */
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 180 25% 70%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 48 28% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 30%;
+    --sidebar-ring: 180 25% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
